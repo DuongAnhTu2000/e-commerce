@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="http://fonts.cdnfonts.com/css/quentin" rel="stylesheet">
+    <link rel="stylesheet" href="/scss/style.css">
     <link rel="stylesheet" href="./assets/image/">
 
 </head>
@@ -17,23 +20,27 @@
 <body>
     <!-- Header -->
     <div class="header">
-        <div class="header-left">
-            <i class="fa-brands fa-facebook-f header-left-icon"></i>
-            <i class="fa-brands fa-twitter header-left-icon"></i>
-            <i class="fa-brands fa-instagram header-left-icon"></i>
+        <div class="header--left">
+            <i class="fa-brands fa-facebook-f header--left__icon"></i>
+            <i class="fa-brands fa-twitter header--left__icon"></i>
+            <i class="fa-brands fa-instagram header--left__icon"></i>
         </div>
-        <div class="header-center">
+        <div class="header--center">
             <p>
                 <span>Free deliveries worldwide! For more info click </span>
                 <a href="https://sante.qodeinteractive.com/contact-us/"><span
                         style="text-decoration: underline; color: #000000;">Here</span></a>
             </p>
         </div>
-        <div class="header-right">
-            <i class="fa-regular fa-heart"></i>
-            <span id="header-icon-right">Wishlist (0)</span>
-            <i class="fa-solid fa-lock"></i>
-            <span id="header-icon-right">Login</span>
+        <div class="header--right">
+            <div class="header--right__wishlist">
+                <i class="fa-regular fa-heart"></i>
+                <span id="header--icon__right">Wishlist (0)</span>
+            </div>
+            <div class="header--right__login">
+                <i class="fa-solid fa-lock"></i>
+                <span class="header--icon__right">Login</span>
+            </div>
         </div>
 
     </div>
@@ -41,19 +48,60 @@
     <!-- Navbar -->
 
     <div class="navbar">
-        <div class="navbar-icon">
+        <div class="navbar--icon">
             <img src="./assets/image/image1.png" alt="Flower">
         </div>
-        <div class="navbar-menu">
-            <span class="navbar-list">Home</span>
-            <span class="navbar-list">Pages</span>
-            <span class="navbar-list">Shop</span>
-            <span class="navbar-list">Store</span>
-            <span class="navbar-list">Blog</span>
-            <span class="navbar-list">Landing</span>
+        <div class="navbar--menu">
+            <span class="navbar--list">Home</span>
+            <span class="navbar--list">Pages</span>
+            <span class="navbar--list">Shop</span>
+            <span class="navbar--list">Store</span>
+            <span class="navbar--list">Blog</span>
+            <span class="navbar--list">Landing</span>
             <i class="fa-solid fa-bag-shopping"></i>
         </div>
     </div>
+
+    <!-- Slider -->
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner slider">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="./assets/image/slider.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block content">
+                    <h5>Natural Skin</h5>
+                    <p>Organic & vegan cosmetics</p>
+                    <button>View More</button>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./assets/image/slider2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block content">
+                    <h5>Collection starter</h5>
+                    <p>A New Generation of Natural Cosmetic Ingredients</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./assets/image/slider3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block content">
+                    <h5>Collection starter</h5>
+                    <p>Our new organic tea blends</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

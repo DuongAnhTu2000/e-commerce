@@ -1,0 +1,56 @@
+:root {
+    --color-primary: #80827e;
+}
+
+.header {
+    font-size: 14px;
+    padding: 0px 40px;
+    height: 40px;
+    background-color: #f6f6f6;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    &--left {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-basis: 33%;
+
+        &__icon {
+            margin: 0px 6px;
+            color: var(--color-primary);
+            cursor: pointer;
+        }
+    }
+
+    &--center {
+        text-align: center;
+        line-height: 20px;
+        color: var(--color-primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+    }
+
+    &--right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-basis: 33%;
+        color: var(--color-primary);
+    }
+
+    &--right__wishlist,
+    &--right__login:hover {
+        color: #2f3327;
+        cursor: pointer;
+    }
+
+    &--icon__right {
+        margin: 0px 10px;
+    }
+}
