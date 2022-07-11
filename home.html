@@ -13,6 +13,8 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="http://fonts.cdnfonts.com/css/quentin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@300;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/scss/style.css">
     <link rel="stylesheet" href="./assets/image/">
 
@@ -68,6 +70,7 @@
             <div class="carousel-item active" data-bs-interval="3000">
                 <img src="./assets/image/slider.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block content">
+                    <img src="./assets/image/leaf.png">
                     <h5>Natural Skin</h5>
                     <p>Organic & vegan cosmetics</p>
                     <button>View More</button>
@@ -104,61 +107,233 @@
         <div class="wrap--slider">
             <div class="wrap--title">
                 <h4 class="wrap--title__paragraph">Featured Items</h4>
-                <div class="wrap--arrow">
+                <div class="wrap--title__arrow">
                     <i class="fa-solid fa-arrow-left-long"></i>
                     <i class="fa-solid fa-arrow-right-long"></i>
                 </div>
             </div>
+
+            <!-- Swiper -->
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <span class="product-tag">Sale</span>
-                        <img src="./assets/image/product-img-1.jpg">
-                        <div class="swiper--content">
-                            <div class="swiper--content__left">
-                                <h5 class="swiper--content__title"> <a itemprop="url"
-                                        class="qodef-woo-product-title-link"
-                                        href="https://sante.qodeinteractive.com/product/green-pack/">
-                                        Green Pack </a>
-                                </h5>
-                                <div class="swiper--content__categories">
-                                    <a href="https://sante.qodeinteractive.com/product-category/cosmetics/"
-                                        rel="tag">Cosmetics</a>
+                        <span class="swiper-slide-tag">Sale</span>
+                        <div class="swiper-slide-img">
+                            <img src="./assets/image/product-img-1.jpg" alt="">
+                            <div class="swiper-product">
+                                <div class="swiper-product-left">
+                                    <div class="swiper-product-categories">
+                                        <h5 itemprop="name" class="swiper-product-title">
+                                            <a itemprop="url" class="swiper-product-link"
+                                                href="https://sante.qodeinteractive.com/product/coco-skies/">
+                                                Green Pack </a>
+                                        </h5>
+                                        <a href="https://sante.qodeinteractive.com/product-category/body-care/"
+                                            rel="tag">Cosmetics</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-product-right">
+                                    <div class="swiper-product-amount">
+                                        <div class="swiper-product-price">
+                                            <span class="swiper-product-price-discount"
+                                                style="color: #cbccca;">$120.00</span>
+                                            <span class="swiper-product-Listed price">$95.00</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper--content__right">
-                                <a href="?add-to-cart=170" data-quantity="1"
-                                    class="button product_type_simple add_to_cart_button ajax_add_to_cart"
-                                    data-product_id="170" data-product_sku="073"
-                                    aria-label="Add “Green Pack” to your cart" rel="nofollow">$95</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <span class="swiper-slide-tag">Sale</span>
+                        <div class="swiper-slide-img">
+                            <img src="./assets/image/product-img-2.jpg" alt="">
+                            <div class="swiper-product">
+                                <div class="swiper-product-left">
+                                    <div class="swiper-product-categories">
+                                        <h5 itemprop="name" class="swiper-product-title">
+                                            <a itemprop="url" class="swiper-product-link"
+                                                href="https://sante.qodeinteractive.com/product/coco-skies/">
+                                                Coco Skies </a>
+                                        </h5>
+                                        <a href="https://sante.qodeinteractive.com/product-category/body-care/"
+                                            rel="tag">Body Care</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-product-right">
+                                    <div class="swiper-product-amount">
+                                        <div class="swiper-product-price">
+                                            <span class="swiper-product-Listed price">$78.00</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./assets/image/product-img-2.jpg">
-                        <span class="product-tag">New</span>
+                        <span class="swiper-slide-tag">Sale</span>
+                        <div class="swiper-slide-img">
+                            <img src="./assets/image/product-img-3.jpg" alt="">
+                            <div class="swiper-product">
+                                <div class="swiper-product-left">
+                                    <div class="swiper-product-categories">
+                                        <h5 itemprop="name" class="swiper-product-title">
+                                            <a itemprop="url" class="swiper-product-link"
+                                                href="https://sante.qodeinteractive.com/product/coco-skies/">
+                                                Coco Green </a>
+                                        </h5>
+                                        <a href="https://sante.qodeinteractive.com/product-category/body-care/"
+                                            rel="tag">Body Care</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-product-right">
+                                    <div class="swiper-product-amount">
+                                        <div class="swiper-product-price">
+                                            <span class="swiper-product-price-discount"
+                                                style="color: #cbccca;">$70.00</span>
+                                            <span class="swiper-product-Listed price">$50.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./assets/image/product-img-3.jpg">
-                        <span class="product-tag">Sale</span>
+                        <span class="swiper-slide-tag">Sale</span>
+                        <div class="swiper-slide-img">
+                            <img src="./assets/image/product-img-4.jpg" alt="">
+                            <div class="swiper-product">
+                                <div class="swiper-product-left">
+                                    <div class="swiper-product-categories">
+                                        <h5 itemprop="name" class="swiper-product-title">
+                                            <a itemprop="url" class="swiper-product-link"
+                                                href="https://sante.qodeinteractive.com/product/coco-skies/">
+                                                Green Pack </a>
+                                        </h5>
+                                        <a href="https://sante.qodeinteractive.com/product-category/body-care/"
+                                            rel="tag">Body Care</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-product-right">
+                                    <div class="swiper-product-amount">
+                                        <div class="swiper-product-price">
+                                            <span class="swiper-product-Listed price">$35.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./assets/image/product-img-4.jpg">
+                        <span class="swiper-slide-tag">Sale</span>
+                        <div class="swiper-slide-img">
+                            <img src="./assets/image/product-img-5.jpg" alt="">
+                            <div class="swiper-product">
+                                <div class="swiper-product-left">
+                                    <div class="swiper-product-categories">
+                                        <h5 itemprop="name" class="swiper-product-title">
+                                            <a itemprop="url" class="swiper-product-link"
+                                                href="https://sante.qodeinteractive.com/product/coco-skies/">
+                                                Green Pack </a>
+                                        </h5>
+                                        <a href="https://sante.qodeinteractive.com/product-category/body-care/"
+                                            rel="tag">Body Care</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-product-right">
+                                    <div class="swiper-product-amount">
+                                        <div class="swiper-product-price">
+                                            <span class="swiper-product-Listed price">$70.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./assets/image/product-img-5.jpg">
+                        <span class="swiper-slide-tag">Sale</span>
+                        <div class="swiper-slide-img">
+                            <img src="./assets/image/product-img-6.jpg" alt="">
+                            <div class="swiper-product">
+                                <div class="swiper-product-left">
+                                    <div class="swiper-product-categories">
+                                        <h5 itemprop="name" class="swiper-product-title">
+                                            <a itemprop="url" class="swiper-product-link"
+                                                href="https://sante.qodeinteractive.com/product/coco-skies/">
+                                                Green Pack </a>
+                                        </h5>
+                                        <a href="https://sante.qodeinteractive.com/product-category/body-care/"
+                                            rel="tag">Body Care</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-product-right">
+                                    <div class="swiper-product-amount">
+                                        <div class="swiper-product-price">
+                                            <span class="swiper-product-Listed price">$25.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./assets/image/product-img-6.jpg">
+                        <span class="swiper-slide-tag">Sale</span>
+                        <div class="swiper-slide-img">
+                            <img src="./assets/image/product-img-7.jpg" alt="">
+                            <div class="swiper-product">
+                                <div class="swiper-product-left">
+                                    <div class="swiper-product-categories">
+                                        <h5 itemprop="name" class="swiper-product-title">
+                                            <a itemprop="url" class="swiper-product-link"
+                                                href="https://sante.qodeinteractive.com/product/coco-skies/">
+                                                Green Pack </a>
+                                        </h5>
+                                        <a href="https://sante.qodeinteractive.com/product-category/body-care/"
+                                            rel="tag">Body Care</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-product-right">
+                                    <div class="swiper-product-amount">
+                                        <div class="swiper-product-price">
+                                            <span class="swiper-product-Listed price">$45.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./assets/image/product-img-7.jpg">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./assets/image/product-img-8.jpg">
+                        <span class="swiper-slide-tag">Sale</span>
+                        <div class="swiper-slide-img">
+                            <img src="./assets/image/product-img-8.jpg" alt="">
+                            <div class="swiper-product">
+                                <div class="swiper-product-left">
+                                    <div class="swiper-product-categories">
+                                        <h5 itemprop="name" class="swiper-product-title">
+                                            <a itemprop="url" class="swiper-product-link"
+                                                href="https://sante.qodeinteractive.com/product/coco-skies/">
+                                                Green Pack </a>
+                                        </h5>
+                                        <a href="https://sante.qodeinteractive.com/product-category/body-care/"
+                                            rel="tag">Body Care</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-product-right">
+                                    <div class="swiper-product-amount">
+                                        <div class="swiper-product-price">
+                                            <span class="swiper-product-Listed price">$35.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- End Swiper -->
+
+            div.
         </div>
     </div>
 
@@ -166,16 +341,18 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 4,
-            spaceBetween: 30,
-            freeMode: true,
+            centeredSlides: true,
+            spaceBetween: 20,
+            grabCursor: true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
             },
-        });
+        }); 
     </script>
 </body>
 
