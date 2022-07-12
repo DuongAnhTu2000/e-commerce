@@ -1,6 +1,7 @@
 .slider {
     width: 100%;
-    height: 800px;
+    height: auto;
+
 
     &--content {
         width: 100%;
@@ -8,5 +9,67 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+
+.carousel-content {
+    position: relative;
+    flex-direction: column;
+    gap: 12px;
+    color: #fff;
+
+    & h5 {
+        font-family: 'Quentin', sans-serif;
+    }
+
+    & p {
+        font-family: 'Montserrat', sans-serif;
+
+    }
+
+    &-1 {
+        top: 30%;
+
+        & h5 {
+            font-size: 100px;
+        }
+
+        & p {
+            font-size: 20px;
+        }
+    }
+
+    &-2 {
+        top: 30%;
+        font-weight: 600;
+        line-height: 65px;
+        text-align: left;
+
+        & h5 {
+            font-size: 44px;
+        }
+
+        & p {
+            font-size: 58px;
+            width: 64%;
+        }
+    }
+
+    &-3 {
+        top: 30%;
+        text-align: unset;
+        display: flex !important;
+        flex-direction: column;
+        align-items: flex-end;
+
+        & h5 {
+            font-size: 44px;
+        }
+
+        & p {
+            font-size: 58px;
+            text-align: right;
+            width: 56%;
+        }
     }
 }

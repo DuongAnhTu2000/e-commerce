@@ -65,29 +65,31 @@
 
     <!-- Slider -->
 
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner slider">
-            <div class="carousel-item active" data-bs-interval="3000">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner slider carousel-content ">
+            <div class="carousel-item active  ">
                 <img src="./assets/image/slider.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block content">
+                <div class="carousel-caption d-none d-md-block carousel-content-1">
                     <img src="./assets/image/leaf.png">
                     <h5>Natural Skin</h5>
                     <p>Organic & vegan cosmetics</p>
-                    <button>View More</button>
+                    <button class="button-fake">View More</button>
                 </div>
             </div>
-            <div class="carousel-item" data-bs-interval="3000">
+            <div class="carousel-item ">
                 <img src="./assets/image/slider2.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block content">
+                <div class="carousel-caption d-none d-md-block carousel-content-2 ">
                     <h5>Collection starter</h5>
                     <p>A New Generation of Natural Cosmetic Ingredients</p>
                 </div>
             </div>
-            <div class="carousel-item" data-bs-interval="3000">
+            <div class="carousel-item ">
                 <img src="./assets/image/slider3.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block content">
+                <div class="carousel-caption d-none d-md-block carousel-content-3 ">
                     <h5>Collection starter</h5>
                     <p>Our new organic tea blends</p>
+                    <button class="button-fake">View More</button>
+
                 </div>
             </div>
         </div>
@@ -104,7 +106,7 @@
     </div>
     <!-- Main Content -->
     <div class="main--content">
-        <div class="wrap--slider">
+        <div class="wrap--slide">
             <div class="wrap--title">
                 <h4 class="wrap--title__paragraph">Featured Items</h4>
                 <div class="wrap--title__arrow">
@@ -146,7 +148,7 @@
                     </div>
 
                     <div class="swiper-slide">
-                        <span class="swiper-slide-tag">Sale</span>
+                        <span class="swiper-slide-tag">New</span>
                         <div class="swiper-slide-img">
                             <img src="./assets/image/product-img-2.jpg" alt="">
                             <div class="swiper-product">
@@ -200,7 +202,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <span class="swiper-slide-tag">Sale</span>
+
                         <div class="swiper-slide-img">
                             <img src="./assets/image/product-img-4.jpg" alt="">
                             <div class="swiper-product">
@@ -226,7 +228,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <span class="swiper-slide-tag">Sale</span>
+
                         <div class="swiper-slide-img">
                             <img src="./assets/image/product-img-5.jpg" alt="">
                             <div class="swiper-product">
@@ -252,7 +254,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <span class="swiper-slide-tag">Sale</span>
+
                         <div class="swiper-slide-img">
                             <img src="./assets/image/product-img-6.jpg" alt="">
                             <div class="swiper-product">
@@ -278,7 +280,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <span class="swiper-slide-tag">Sale</span>
+
                         <div class="swiper-slide-img">
                             <img src="./assets/image/product-img-7.jpg" alt="">
                             <div class="swiper-product">
@@ -304,7 +306,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <span class="swiper-slide-tag">Sale</span>
+
                         <div class="swiper-slide-img">
                             <img src="./assets/image/product-img-8.jpg" alt="">
                             <div class="swiper-product">
@@ -331,9 +333,12 @@
                     </div>
                 </div>
             </div>
-            <!-- End Swiper -->
+        </div>
+        <!-- End Swiper -->
 
-            div.
+        <div class="three-categories">
+
+
         </div>
     </div>
 
@@ -345,9 +350,13 @@
     <script>
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 4,
-            centeredSlides: true,
             spaceBetween: 20,
+            loop: true,
             grabCursor: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,

@@ -22,6 +22,9 @@ body {
     .wrap {
         max-width: 100%;
 
+        &--slide {
+            padding: 94px 0px 112px 0px;
+        }
 
         &--title {
             margin: 17px 0;
@@ -40,7 +43,6 @@ body {
 
             &__arrow {
                 color: #929d86;
-                margin-right: 14px;
 
                 & i {
                     cursor: pointer;
@@ -114,6 +116,7 @@ body {
             display: flex;
             justify-content: space-between;
 
+            &-title {}
 
             &-price {
                 display: flex;
@@ -139,15 +142,18 @@ body {
             &-categories a {
                 vertical-align: top;
                 font-size: 16px;
-                color: #bfc0be;
+                color: #adafac;
                 font-family: "Poppins,sans-serif";
                 text-decoration: none;
+                transition: all 0.4s ease;
 
                 &:hover {
+
                     color: #2f3327;
                 }
             }
         }
     }
 
+    
 }
