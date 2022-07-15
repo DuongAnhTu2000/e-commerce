@@ -21,7 +21,7 @@ body {
 
         &--slide {
             padding: 94px 0px 112px 0px;
-            margin: 0 250px;
+            margin: 0 120px;
         }
 
         &--title {
@@ -114,7 +114,6 @@ body {
             display: flex;
             justify-content: space-between;
 
-            &-title {}
 
             &-price {
                 display: flex;
@@ -139,7 +138,7 @@ body {
             &-categories a {
                 vertical-align: top;
                 font-size: 13px;
-                color: #adafac;
+                color: #a4a5a2;
                 font-weight: 400;
                 text-decoration: none;
                 transition: all 0.4s ease;
@@ -152,10 +151,12 @@ body {
         }
     }
 
-    .product--categories {
-        padding: 0px 20px 40px 20px;
+    .product {
+        &--categories {
+            padding: 0px 20px 40px 20px;
+        }
 
-        .product--container {
+        &--container {
             display: flex;
 
             &__row {
@@ -191,6 +192,84 @@ body {
 
                 }
             }
+        }
+    }
+
+    .introduction {
+
+        &--cosmetic {
+            position: relative;
+
+        }
+
+        &--container {
+            position: relative;
+        }
+
+        &--thumbnail {
+            & img {
+                width: 100%;
+                object-fit: cover;
+                cursor: pointer;
+            }
+
+            & i {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 140px;
+                color: #fff;
+                padding: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .container {
+
+        &--text {
+            padding: 125px 0px 0px 0px;
+        }
+
+        &--wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            gap: 12px;
+        }
+
+        &--image {}
+
+        &--text__content {
+            & h6 {
+                font-size: 16px;
+                font-weight: 300;
+                color: #80827e;
+                line-height: 1.5;
+                margin: 25px 0;
+                font-family: "Poppins,sans-serif";
+                flex-wrap: wrap;
+            }
+
+            & h2 {
+                font-size: 38px;
+            }
+        }
+
+        &--divier {
+            text-align: center;
+            margin: -21px 0px 0px 0px;
+            width: 100%;
+        }
+
+        &--divider__separator {
+            width: 58px;
+            margin: 0 auto;
+            border-bottom: 2px solid #9CA896;
+            display: block;
         }
     }
 }
