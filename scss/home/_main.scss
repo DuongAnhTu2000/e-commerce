@@ -153,7 +153,7 @@ body {
 
     .product {
         &--categories {
-            padding: 0px 20px 40px 20px;
+            padding: 0px 40px 40px;
         }
 
         &--container {
@@ -215,21 +215,26 @@ body {
 
             & i {
                 position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                font-size: 140px;
+                top: 36%;
+                left: 44%;
+                font-size: 30px;
                 color: #fff;
-                padding: 20px;
+                padding: 68px 72px;
                 cursor: pointer;
+                border-radius: 50%;
+                border: 1px solid #ffffff;
+                display: flex;
+                justify-content: center;
+
             }
         }
     }
 
-    .container {
+    .paragraph {
 
         &--text {
             padding: 125px 0px 0px 0px;
+
         }
 
         &--wrap {
@@ -245,13 +250,14 @@ body {
 
         &--text__content {
             & h6 {
-                font-size: 16px;
+                font-size: 18px;
                 font-weight: 300;
                 color: #80827e;
                 line-height: 1.5;
                 margin: 25px 0;
                 font-family: "Poppins,sans-serif";
                 flex-wrap: wrap;
+                padding: 0 18%;
             }
 
             & h2 {
@@ -267,9 +273,61 @@ body {
 
         &--divider__separator {
             width: 58px;
-            margin: 0 auto;
+            margin: 16px auto;
             border-bottom: 2px solid #9CA896;
             display: block;
+        }
+
+
+        .product--list {
+            & i {
+                color: #68745c;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .grid--container {
+        padding: 38px 0px 98px 0px;
+
+        .grid--product {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 0px 40px 0px 40px;
+            font-size: 30px;
+            text-align: center;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: auto auto auto auto auto;
+
+            &__item {
+                cursor: pointer;
+                padding: 0 5px;
+                margin: 0 0 10px;
+            }
+
+            &__item img {
+                width: auto;
+                height: auto;
+            }
+
+            &__content {
+                padding: 23px 0 13px;
+
+                & h6 {
+                    font-family: 'Poppins,sans-serif';
+                    font-weight: 100;
+                }
+            }
+
+            &__star {
+
+                margin: 0 5px 0 4px;
+                font-size: 12px;
+                color: #68745c;
+            }
+
+
+
         }
     }
 }
