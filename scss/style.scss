@@ -1,11 +1,13 @@
+// config
+@import "config/setting.functions";
+@import "config/settting.variable";
+
+// component
+@import "component/button";
+
 // layout home
 @import "home/header";
 @import "home/navbar";
 @import "home/slider";
 @import "home/main";
-
-// component
-@import "component/button";
-
-// config
-@import "config/variable";
+@import "home/footer";

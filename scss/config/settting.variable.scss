@@ -1,0 +1,29 @@
+$responsive: (md: '768px',
+    xl: '1024px',
+    xxl: '1200px'
+);
+
+$colors: (background-body: #fcfcfc,
+    background-button:#ffffff,
+    background-button-hover:#e9ebe7,
+    color-button: #68745c,
+    color-primary: #80827e,
+    color-white:#FFFFFF,
+    btn-color: #66ff0e,
+    text-color:#f8f7f6,
+    font-special: "Quentin, sans-serif",
+    border-color: #FFFFFF,
+    border-bottom:#a5b199,
+    placeholer-color: #858f7b,
+);
+
+:root {
+
+    /*Begin color*/
+    @each $name,
+    $color in $colors {
+        --color-#{$name}: #{$color};
+    }
+
+    /*End color*/
+}

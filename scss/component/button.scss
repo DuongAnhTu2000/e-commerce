@@ -1,18 +1,39 @@
-.button-fake {
+.button--style {
+    margin-top: 20px;
     position: relative;
-    border: none;
+    border: 1px solid color(border-color);
     font-weight: 600;
     line-height: 25px;
-    padding: 15px 53px;
+    padding: 14px 41px;
+    background: transparent;
     font-size: 15px;
-    background: #aea6a0;
     opacity: 0.8;
-}
+    color: color(text-color);
 
-
-.button-fake:hover {
-    content: '';
-    width: calc(100% - 1px);
-    border: 1px solid rgb(255, 255, 255);
-    background-color: #FFFFFF40;
+    &:after {
+      background-color: color(background-button);
+      text-align: left;
+      line-height: 21px;
+      letter-spacing: 0px;
+      font-weight: 600;
+      position: absolute;
+      content: "";
+      top: 10px;
+      left: 10px;
+      transition: transform 0.3s ease,
+          -webkit-transform 0.3s ease;
+  }
+    &:hover:after {
+        background-color: color(background-button);
+        transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+        display: block;
+        width: calc(100% - 1px);
+        height: calc(100% - 1px);
+        color: color(color-white);
+        font-weight: 600;
+        line-height: 21px;
+        text-align: left;
+        position: absolute;
+        opacity: 0.2;
+    }
 }
